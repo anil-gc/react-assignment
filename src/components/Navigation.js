@@ -8,6 +8,14 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import {faLinkedin,faGithub,faMedium,faTwitter} from '@fortawesome/free-brands-svg-icons';
 
 function Navigation() {
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId)
+    if (section) {
+      section.scrollIntoView({
+        behavior:'smooth'
+      })
+    }
+  }
   return (
     <Navbar expand="lg" className="navh navbar-expand bg-body-tertiary" data-bs-theme="dark">
       <Container fluid>
@@ -24,8 +32,8 @@ function Navigation() {
             <Nav.Link href="#action3"><FontAwesomeIcon className='fontcolor' icon={faTwitter} /></Nav.Link>
           </Nav>
           <nav className="ml-auto">
-            <a href="#portfolio" className="port">Portfolio</a>
-            <a href="#contactMe" className='port'>Contact Me</a>
+            <a href='#projects' onClick={() => scrollToSection('projects')} className="port">Projects</a>
+            <a href='#contactMe' onClick={() => scrollToSection('contactMe')}  className='port'>Contact Me</a>
           </nav>
         </Navbar.Collapse>
       </Container>

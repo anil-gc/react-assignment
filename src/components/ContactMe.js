@@ -8,10 +8,12 @@ import './css/contact.css'
 
 function ContactMe() {
   return (
-    <div className='contact'>
+    <div className='contact' id='contactMe'>
+
       <Container>
         <Row>
-          <Col xs={6} sm={{offset:3}}> 
+          <Col xs={8} sm={{offset:2}}> 
+          <h3 style={{color:'white'}}>Contact me</h3>
             <Form>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                   <Form.Label>Name</Form.Label>

@@ -9,6 +9,10 @@
   color: aliceblue !important;
 }
 
+.fontcolor:hover{
+  cursor: pointer;
+}
+
 .navh{
   height: 40px;
 }

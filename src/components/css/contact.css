@@ -1,5 +1,6 @@
 .contact{
-    height: 600px;
+    height: 800px;
     background-color: blueviolet;
-    background-color: rgb(172, 102, 238);
+    padding-top: 100px;
+    color: white;
 }

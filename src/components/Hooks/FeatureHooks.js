@@ -15,10 +15,10 @@ function FeatureHooks() {
     },[])
 
     return(
-        <div className="feature">
+        <div className="feature" id="projects">
         <Container>
         <Row>
-            <h2 style={{color:'white',margin:'50px 0'}}>Feature Projects</h2>
+            <h2 style={{color:'white',margin:'20px 0'}}>Feature Projects</h2>
                   {data.map((data) => { return (<Feature key={data.id} itemData={data} />)})}
         </Row>
         </Container>
